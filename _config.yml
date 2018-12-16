@@ -1,0 +1,23 @@
+# Site settings
+title: Travel Blog
+email: kelsierstevenson@gmail.com
+url: "https://k-travel-s.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+# map_url:  "https://map.milliman.com"
+repository: kelsiestevenson/travel-blog.github.io.
+
+# Build settings
+collections:
+    - sections
+google_analytics: XX-XXXXXXXX-X #Put in a google analytics ID here if we want to use Google Analytics to track visits
+markdown: kramdown
+sass:
+    sass_dir: _sass
+    style: compressed
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
