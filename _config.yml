@@ -1,5 +1,5 @@
 # Site settings
-title: Travel Blog
+# title: Travel Blog
 email: kelsierstevenson@gmail.com
 url: "https://k-travel-s.com"
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -1,6 +1,10 @@
-- name: Home
+- name: home
   link: /
-- name: About
+- name: locations
+  link: /locations.html
+- name: about me
   link: /about.html
-- name: Blog
+- name: blog
   link: /blog.html
+- name: contact
+  link: /contact.html
