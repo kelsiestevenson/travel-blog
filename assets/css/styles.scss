@@ -53,3 +53,46 @@ header {
           }
     }
 }
+
+// cards
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 30%;
+  margin: 1em;
+
+  a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h2 {
+    color: $link;
+    text-decoration: none;
+    }
+
+    h2:hover {
+      color: $link-hover;
+    }
+
+    .hover-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .hover-img:hover {
+      opacity: .5;
+      transition: .5s ease;
+      overflow: hidden;
+    }
+  }
+}

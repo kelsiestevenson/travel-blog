@@ -14,9 +14,10 @@
 /* Variables */
 $black: #000000;
 $darkgrey: lighten($black, 40%);
-$lightgrey: lighten($black,80%);
+$lightgrey: lighten($black, 80%);
 $white: #FFFFFF;
 $link: #0496FF;
+$link-hover: darken($link, 15%);
 $nav-active: #FFFFFF;
 $nav-inactive: darken($nav-active, 20%);
 $nav-hover: darken($nav-active, 40%);
@@ -37,4 +38,34 @@ body{
     flex-flow: column;
     align-items: center;
     margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: $darkgrey;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: $black;
+  margin: .25em;
+}
+
+h3 {
+  font-size: .83em;
+  color: $lightgrey;
+  margin: 0;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+}
+a:hover {
+  color: $link-hover;
 }
