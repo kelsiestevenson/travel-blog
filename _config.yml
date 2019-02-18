@@ -15,15 +15,15 @@
 # in the templates via {{ site.myvariable }}.
 
 collections:
-  authors:
+  cities:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "cities"
     values:
-      layout: "author"
+      layout: "city"
   - scope:
       path: ""
       type: "posts"

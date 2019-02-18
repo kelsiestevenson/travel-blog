@@ -1,6 +1,6 @@
 <header>
   {% include navigation.html %}
-  <div class="hero-image">
-      <h1 class="hero-text">Travel Blog</h1>
+  <div class="hero-image" {% if page.featured-img %} style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ site.url }}/assets/images/{{ page.featured-img }}');" {% endif %}>
+      <h1 class="hero-text">Travel Album</h1>
   </div>
 </header>
