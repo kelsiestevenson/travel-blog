@@ -96,3 +96,15 @@ header {
     }
   }
 }
+
+
+.sidelines {
+  text-align: center;
+  border-bottom: 1px solid $lightgrey;
+  height: .75em;
+  width: 60%;
+ }
+.sidelines span {
+  background: $white;
+  padding:0 0.5em;
+}
