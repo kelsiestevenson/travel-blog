@@ -1,6 +1,14 @@
 <header>
-  {% include navigation.html %}
-  <div class="hero-image" {% if page.featured-img %} style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ site.url }}/assets/images/{{ page.featured-img }}');" {% endif %}>
-      <h1 class="hero-text">Travel Album</h1>
+  <div class="hero-image" {% if page.featured-img %} style="background-image: linear-gradient(45deg, rgba(255, 153, 102, 0.1), rgba(255, 94, 82, 0.1)), url('{{ site.url }}/assets/images/{{ page.featured-img }}');" {% endif %}>
+    <div class="row navbar">
+      <div class="row left-align">
+        <img class="logo" src="{{ site.url }}/assets/images/k_logo.svg" alt="K">
+      </div>
+      <div class="row right-align">
+        {% include navigation.html %}
+      </div>
+    </div>
+      <h1 class="hero-text">{{ page.hero-text }}</h1>
+      <h2 class="sub-hero-text">{{ page.sub-hero-text }}</h2>
   </div>
 </header>

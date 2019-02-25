@@ -1,15 +1,18 @@
 ---
 layout: default
-title: cities
+title: Cities
+hero-text: Cities
+featured-img: tom-grimbert-661520-unsplash.jpg
 ---
-<h1>Cities</h1>
+<h1 class="sidelines"><span>Cities</span></h1>
 
-<ul>
+<div class="card-container">
   {% for city in site.cities %}
-    <li>
-      <h2><a href="{{ city.url }}">{{ city.name }}</a></h2>
-      <h3>{{ city.location }}</h3>
-      <p>{{ city.content | markdownify }}</p>
-    </li>
+    <div class="card">
+      <a href="{{ city.url }}">
+        <img class="hover-img" src="{{ site.url }}/assets/images/{{ city.featured-img }}">
+        <h2>{{ city.name }}</h2>
+      </a>
+    </div>
   {% endfor %}
-</ul>
+</div>
