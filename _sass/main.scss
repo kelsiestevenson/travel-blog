@@ -18,9 +18,11 @@ $lightgrey: lighten($black, 80%);
 $white: #FFFFFF;
 $link: #0496FF;
 $link-hover: darken($link, 15%);
-$nav-active: #FFFFFF;
-$nav-inactive: darken($nav-active, 20%);
-$nav-hover: darken($nav-active, 40%);
+$nav-active: $white; //#FFFFFF;
+$nav-inactive: #FCE0D6; //darken($nav-active, 10%);
+$nav-hover: #D86B50;
+$red: #D34D39;
+$red-hover: darken($red, 40%);
 
 /**********************/
 /****** header ********/
@@ -68,4 +70,25 @@ a {
 }
 a:hover {
   color: $link-hover;
+}
+
+.logo {
+  width: 1em;
+  height: auto;
+  margin-left: 1em;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.left-align {
+  justify-content: flex-start;
+}
+
+.right-align {
+  justify-content: flex-end;
 }
