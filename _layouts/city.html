@@ -1,16 +1,21 @@
 ---
 layout: default
 ---
-
-<h1>{{ page.name }}</h1>
+<h1 class="sidelines"><span>{{ page.name }}</span></h1>
 <h2>{{ page.location }}</h2>
 
 {{ content }}
 
 <h2>Posts</h2>
-<ul>
-  {% assign filtered_posts = site.posts | where: 'city', page.short_name %}
+
+{% assign filtered_posts = site.posts | where: 'city', page.short_name %}
+<div class="card-container">
   {% for post in filtered_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <div class="card">
+      <a href="{{ post.url }}">
+        <img class="hover-img" src="{{ post.url }}/assets/images/{{ post.featured-img }}">
+        <h2>{{ post.name }}</h2>
+      </a>
+    </div>
   {% endfor %}
-</ul>
+</div>
