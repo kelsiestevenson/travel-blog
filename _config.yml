@@ -17,6 +17,8 @@
 collections:
   cities:
     output: true
+  about-facts:
+    output: true
 
 defaults:
   - scope:
