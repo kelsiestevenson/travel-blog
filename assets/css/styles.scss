@@ -95,18 +95,19 @@ header {
       color: $link-hover;
     }
 
-    .hover-img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
+  }
+  
+  .card-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
 
-    .hover-img:hover {
-      opacity: .5;
-      transition: .5s ease;
-      // background-color: $red;
-      overflow: hidden;
-    }
+  .card-img:hover {
+    opacity: .5;
+    transition: .5s ease;
+    // background-color: $red;
+    overflow: hidden;
   }
 }
 

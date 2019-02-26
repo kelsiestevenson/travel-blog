@@ -8,7 +8,7 @@ layout: default
   {% for city in site.cities %}
     <div class="card">
       <a href="{{ city.url }}">
-        <img class="hover-img" src="{{ site.url }}/assets/images/{{ city.featured-img }}">
+        <img class="card-img" src="{{ site.url }}/assets/images/{{ city.featured-img }}">
         <h2>{{ city.name }}</h2>
       </a>
       <h3>{{ city.location }}</h3>
