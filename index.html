@@ -1,5 +1,18 @@
 ---
-title: Home
-hero-text: Travel Album
+title: Locations
+hero-text: Locations
+featured-img: tom-grimbert-661520-unsplash.jpg
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<h1 class="sidelines"><span>Locations</span></h1>
+
+<div class="card-container">
+  {% for post in site.posts %}
+    <div class="card">
+      <a href="{{ post.url }}">
+        <img class="card-img" src="{{ site.url }}/assets/images/{{ post.featured-img }}">
+        <h2>{{ post.title }}</h2>
+      </a>
+      <h3>{{ post.date | date: "%B %Y" }}</h3>
+    </div>
+  {% endfor %}
+</div>
