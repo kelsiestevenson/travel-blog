@@ -1,7 +1,5 @@
 - name: locations
   link: /
-- name: cities
-  link: /cities.html
 - name: about me
   link: /about.html
 - name: contact
