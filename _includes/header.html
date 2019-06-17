@@ -1,11 +1,19 @@
+{% assign filtered_posts = site.posts | where: 'city', page.short_name %}
 <header>
-    <svg id="kelsie-logo">
-        <use href="#kelsie-logo" />
-    </svg>
-    <div id="header-content">
-        <svg id="header-logo">
-            <use href="#travel-logo" />
-        </svg>
-        <h1 id="tagline">Developing with Design</h1>
+  <div class="hero-image" {% if page.featured-img %} style="background-image: linear-gradient(45deg, rgba(255, 153, 102, 0.1), rgba(255, 94, 82, 0.1)), url('{{ site.url }}/assets/images/{{ page.featured-img }}');" {% endif %}>
+    <div class="row navbar">
+      <div class="row left-align">
+        <img class="logo" src="{{ site.url }}/assets/images/k_logo.svg" alt="K">
+      </div>
+      <div class="row right-align">
+        {% include navigation.html %}
+      </div>
     </div>
+    <h1 class="hero-text">{{ page.hero-text }}</h1>
+    {% for post in filtered_posts %}
+    <h2>
+      <a href="{{ post.url }}" class="sub-hero-text">{{ page.sub-hero-text }}</a>
+    </h2>
+    {% endfor %}
+  </div>
 </header>

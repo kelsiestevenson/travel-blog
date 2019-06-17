@@ -1,11 +1,9 @@
-source "https://rubygems.org"
-ruby RUBY_VERSION
+source 'https://rubygems.org'
 
-gem "github-pages", group: :jekyll_plugins
+gem 'jekyll'
 
-# If you have any plugins, put them here!
-# group :jekyll_plugins do
-#    gem "jekyll-feed", "~> 0.6"
-# end
-
-gem 'wdm', '>= 0.1.0'
+group :jekyll_plugins do
+  gem 'jekyll-sitemap'
+  gem 'jekyll-feed'
+  gem 'jekyll-seo-tag'
+end

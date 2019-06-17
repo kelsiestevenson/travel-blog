@@ -1,0 +1,18 @@
+---
+layout: default
+title: About
+hero-text: About Me
+featured-img: kelsie-pr-hike.jpg
+---
+<h1 class="sidelines"><span>{{ page.title }}</span></h1>
+
+{% assign about-facts = site.about-facts | sort: 'order' %}
+<div class="card-container">
+  {% for about in about-facts %}
+    <div class="card">
+      <img class="card-img" src="{{ site.url }}/assets/images/{{ about.featured-img }}">
+      <h2>{{ about.name }}</h2>
+      <p>{{ content }}</p>
+    </div>
+  {% endfor %}
+</div>
